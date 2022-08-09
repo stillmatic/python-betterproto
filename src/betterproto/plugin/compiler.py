@@ -45,7 +45,8 @@ def outputfile_compiler(output_file: OutputTemplate) -> str:
         force_grid_wrap=2,
         known_third_party=["grpclib", "betterproto"],
     )
-    return black.format_str(
-        src_contents=code,
-        mode=black.Mode(),
-    )
+    # return black.format_str(
+    #     src_contents=code,
+    #     mode=black.Mode(),
+    # )
+    return code
