@@ -52,6 +52,6 @@ def outputfile_compiler(output_file: OutputTemplate) -> str:
         )
     except Exception as e:
         print(e)
-        print(code)
+        # print(output_file)
         pass
     return code

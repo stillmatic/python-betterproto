@@ -263,7 +263,7 @@ class OutputTemplate:
         str
             Name of input package.
         """
-        return self.package_proto_obj.package
+        return sanitize_name(self.package_proto_obj.package)
 
     @property
     def input_filenames(self) -> Iterable[str]:
